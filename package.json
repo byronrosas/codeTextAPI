@@ -1,0 +1,34 @@
+{
+  "name": "codetextapi",
+  "version": "1.0.0",
+  "description": "API recibe un texto y devuelve el mismo texto",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server -e js server.js",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/byronrosas/codeTextAPI.git"
+  },
+  "keywords": [
+    "API",
+    "texto"
+  ],
+  "author": "Rosas Byron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/byronrosas/codeTextAPI/issues"
+  },
+  "homepage": "https://github.com/byronrosas/codeTextAPI#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0",
+    "supertest": "^4.0.2"
+  }
+}
