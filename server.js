@@ -2,6 +2,7 @@ require('dotenv').config({ path: './sample.env' });
 
 const createError = require('http-errors');
 const bodyParser = require('body-parser')
+var cors = require('cors')
 const express = require('express');
 const app = express();
 
@@ -12,7 +13,7 @@ const port = process.env.API_SERVER_PORT || 3000;
 
 //MIDDLEWARES
 app.use(bodyParser.json()) // for parsing application/json
-
+app.use(cors())
 
 //ROUTES
 //greeting route
